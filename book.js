@@ -57,15 +57,6 @@ class Book {
 			}
 		};
 			
-
-	static async getAll() {
-		let booksearch = await book.find({},{_id:0}).toArray();
-			if (booksearch.length == 0) {
-				return null
-			} else {
-				return booksearch
-			}
-		}
 };
 
 module.exports = Book;
